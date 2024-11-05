@@ -23,20 +23,9 @@ import { ContactComponent } from './components/contact/contact.component';
     ResumeComponent,
     ContactComponent,
   ],
-  // templateUrl: './app.component.html',
-  // styleUrls: ['./app.component.css'],
-  template: `
-    <app-topbar></app-topbar>
-    <app-hero></app-hero>
-    <div class="article">
-      <app-about></app-about>
-      <div>
-        <app-tabs></app-tabs>
-        <router-outlet />
-      </div>
-    </div>
-    <app-footer></app-footer>
-  `,
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+
 })
 export class AppComponent {
   title = 'Portfolio';

@@ -558,6 +558,10 @@ body {
   border-radius: var(--shape-corner-full);
   margin: 0 auto;
 }
+.hero-banner > img {
+  object-fit: cover; /* Cover the container */
+  object-position:center; /* Center the image */
+}
 
 .hero-content {
   max-width: 500px;
