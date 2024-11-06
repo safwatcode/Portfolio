@@ -12,23 +12,26 @@
       </p>
 
       <div class="btn-wrapper">
-        <a class="chip"
-          href="mailto:safwatahmed669@gmail.com?subject=General Inquiry about [Your Question]&body= Hello, Safwat Ahmed%0D%0A%0D%0AI'm [Your Name] from [Your Company].%0D%0A%0D%0A I'm reaching you for ...">
+        <a class="chip" [href]="emailURL">
           <span class="material-symbols-outlined" aria-hidden="true">
             mail
           </span>
           <span class="lable-lg">safwatahmed669&#64;gmail.com</span>
-          <div href="" class="state-layer"></div>
+          <div class="state-layer"></div>
         </a>
 
-        <a href="tel:+201125285475" class="chip">
+        <a [href]="phoneURL" class="chip">
           <span class="material-symbols-outlined" aria-hidden="true">
             call
           </span>
           <span class="lable-lg">+201125285475</span>
-          <div href="" class="state-layer"></div>
-
+          <div class="state-layer"></div>
         </a>
+        <button class="chip chip-btn" (click)="downloadResume()">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span class="lable-lg">Download Resume</span>
+          <div class="state-layer"></div>
+        </button>
       </div>
     </div>
   </div>

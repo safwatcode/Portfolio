@@ -512,7 +512,7 @@ body {
   width: 100%;
   height: var(--top-bar-height);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding-inline: 16px;
   z-index: 4;
@@ -564,7 +564,7 @@ body {
 }
 
 .hero-content {
-  max-width: 500px;
+  max-width: 100%;
 }
 
 .hero .section-subtitle {
@@ -580,6 +580,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  width: 100%;
 }
 
 /*-----------------------------------*\
@@ -612,8 +613,18 @@ body {
 
 .list-item {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  gap: 4px;
+}
+.list-item:first-child span {
+  /* padding-left: 2px; */
+}
+.list-item > i {
+  width: 30px;
+  font-size: 20px;
+}
+.list-item:first-child > i:first-child {
+  padding-left: 3px;
 }
 /*-----------------------------------*\
   #Primary tabs
