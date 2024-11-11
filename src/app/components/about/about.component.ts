@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.css',
 })
 export class AboutComponent {
-  portfolioURL: string = 'https://portfolio-six-ebon-77.vercel.app/projects';
+  linksURL: string = 'https://portfolio-six-ebon-77.vercel.app/projects';
+  googleMapsURL: string = "https://www.google.com/maps?q=Elsalam+City,+Cairo,+Egypt"
 }

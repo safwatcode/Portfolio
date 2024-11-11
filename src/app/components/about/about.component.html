@@ -8,7 +8,18 @@
   <ul class="about-list">
     <li class="list-item">
       <i class="fa-solid fa-location-dot"></i>
-      <span class="label-md">Elsalam city, Cairo, Egypt</span>
+      <a [href]="googleMapsURL" target="_blank" rel="noopener noreferrer" title="Google Maps">
+        Elsalam city, Cairo, Egypt
+        <i class="outside-link fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </li>
+
+    <li class="list-item">
+      <i class="fa-solid fa-code-fork"></i>
+      <a class="label-md" [href]="linksURL" target="_blank" title="All Links">
+        Link Tree
+        <i class="outside-link fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
     </li>
 
     <li class="list-item">
@@ -16,9 +27,7 @@
       <span class="label-md">Freelancer</span>
     </li>
 
-    <li class="list-item">
-      <i class="fa-solid fa-globe"></i>
-      <a class="label-md" [href]="portfolioURL" target="_blank">Portfolio</a>
-    </li>
+
+
   </ul>
 </div>

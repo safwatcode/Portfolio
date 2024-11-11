@@ -5,22 +5,18 @@
       <ul class="contact-info-list">
         <li class="contact-info-item">
           <div class="icon-box">
-            <span class="material-symbols-outlined" aria-hidden="true">
-              mail
-            </span>
+            <i class="email-icon fa-solid fa-envelope"></i>
           </div>
           <div class="info-content">
             <p class="label-sm info-title">Mail</p>
-            <a href="mailto:john.doe@dev.com" class="label-sm info-text">
-              john.doe&#64;dev.com
+            <a href="mailto:safwatcode@gmail.com" class="label-sm info-text">
+              safwatcode&#64;gmail.com
             </a>
           </div>
         </li>
         <li class="contact-info-item">
           <div class="icon-box">
-            <span class="material-symbols-outlined" aria-hidden="true">
-              call
-            </span>
+            <i class="fa-solid fa-phone"></i>
           </div>
           <div class="info-content">
             <p class="label-sm info-title">Contact</p>
@@ -31,9 +27,7 @@
         </li>
         <li class="contact-info-item">
           <div class="icon-box">
-            <span class="material-symbols-outlined" aria-hidden="true">
-              location_on
-            </span>
+            <i class="fa-solid fa-location-dot"></i>
           </div>
           <div class="info-content">
             <p class="label-sm info-title">Address</p>
@@ -55,9 +49,6 @@
         </a>
         <a href="https://www.instagram.com" target="_blank" class="social-item" title="Instagram">
           <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://www.x.com" target="_blank" class="social-item" title="Twitter">
-          <i class="fa-brands fa-x-twitter"></i>
         </a>
       </div>
     </div>
@@ -81,7 +72,8 @@
         <div class="form-invalid">Please fill the contact form.</div>
         }
 
-        <input type="text" name="subject" required placeholder="Subject*" class="input-field" #subject="ngModel" ngModel />
+        <input type="text" name="subject" required placeholder="Subject*" class="input-field" #subject="ngModel"
+          ngModel />
 
         @if(subject.invalid && (subject.dirty || subject.touched)) {
         <div class="form-invalid">Subject is required</div>
@@ -97,7 +89,10 @@
         <div class="form-invalid">Please fill the contact form.</div>
         }
 
-        <button type="submit" class="btn lable-lg">Send Message</button>
+        <button type="submit" class="btn lable-lg">
+          Send Message
+          <div class="state-layer"></div>
+        </button>
       </form>
     </div>
   </div>

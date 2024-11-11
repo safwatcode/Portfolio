@@ -161,7 +161,8 @@ textarea {
   border: none;
   font: inherit;
 }
-ol , ul {
+ol,
+ul {
   padding-left: 0;
 }
 input,
@@ -560,7 +561,7 @@ body {
 }
 .hero-banner > img {
   object-fit: cover; /* Cover the container */
-  object-position:center; /* Center the image */
+  object-position: center; /* Center the image */
 }
 
 .hero-content {
@@ -582,7 +583,9 @@ body {
   gap: 8px;
   width: 100%;
 }
-
+.hero .btn-wrapper .email-icon {
+  padding-top: 3px;
+}
 /*-----------------------------------*\
   #ABOUT CARD
 \*-----------------------------------*/
@@ -608,16 +611,13 @@ body {
 
 .about-list {
   display: grid;
-  gap: 12px;
+  gap: 15px;
 }
 
 .list-item {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
-.list-item:first-child span {
-  /* padding-left: 2px; */
 }
 .list-item > i {
   width: 30px;
@@ -626,6 +626,14 @@ body {
 .list-item:first-child > i:first-child {
   padding-left: 3px;
 }
+.list-item a .outside-link {
+  font-size: 10px;
+  margin-left: 5px;
+  color: var(--primary);
+  position: relative !important;
+  top: -1px;
+}
+
 /*-----------------------------------*\
   #Primary tabs
 \*-----------------------------------*/
@@ -771,6 +779,8 @@ body {
   text-align: center;
   padding: 16px;
   border-block-start: 1px solid var(--outline-variant);
+  display: grid;
+  gap: 10px;
 }
 .year {
   display: inline-block;
